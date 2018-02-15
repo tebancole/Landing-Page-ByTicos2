@@ -1,0 +1,547 @@
+
+/* Estilos generales*/
+body,html {
+    font-family:'Lato', sans-serif;
+    font-size:16px;
+    color:#777;
+    line-height:1.7;
+    overflow-x:hidden;
+    background-image: url(../img/body_bg.png);
+    background-repeat: repeat;
+}
+
+header h2 {
+    font-size:3em;
+    line-height:1;
+    font-weight:bold;
+    color:#fff;
+    padding-bottom: 25px;
+}
+
+header h3 {
+    font-size: 1.125em;
+    line-height:1.4;
+    font-weight:normal;
+    color:#fff;
+    padding-bottom: 30px;
+}
+
+header h4 {
+    font-size: 3.75em;
+    line-height:1.4;
+    font-weight:bold;
+}
+
+header #we {
+  color:#f1ad1d;
+  display: inline;
+  margin-right: 2.5%;
+}
+
+header #make {
+  color:#fff;
+  display: inline;
+}
+
+.jumbotron-fluid {
+    padding:0;
+    margin: 0;
+}
+
+
+/* estilos parallax*/
+.parallax {
+    height: 100vh;
+    text-align:center;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    overflow:hidden;
+}
+
+#titles h2,h3 {
+  margin-left: 5%;
+}
+
+#titles {
+  margin-top: 25%;
+}
+
+.cuadro_1 {
+  color: #F1AD1D;
+  font-weight: 700;
+  font-size: 3.75em;
+  border: solid 1px white;
+  padding: 25px 30px;
+  margin: 50px 0 0 5%;
+  display: inline-block;
+  background-color: rgba(254, 254, 254, 1);
+}
+
+.cuadro_2 {
+  color: white;
+  z-index: 9999;
+  font-weight: 700;
+  font-size: 3.75em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: solid 1px white;
+  padding: 25px 30px;
+  display: inline-block;
+}
+
+/*Estilos nav*/
+
+#brand {
+  color:#f1ad1d;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 5%;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 2px solid #f1ad1d;
+}
+
+.navbar-nav li {
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.navbar-nav li .nav-link {
+  font-size: 0.875em;
+}
+
+.navbar-nav li:hover {
+  color:#f1ad1d;
+}
+
+/*Estilos About*/
+
+#about h2 {
+  margin-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375em;
+  font-weight: bold;
+}
+
+#about p {
+  margin-top: 30px;
+  font-size: 1.0625em;
+  border-width: 8%;
+  padding-bottom: 25px;
+}
+
+#about hr {
+  width: 8%;
+  height: 2px;
+  color: red;
+}
+
+#about img {
+  margin-top: 80px;
+}
+
+/*Estilos proyect*/
+#proyect {
+  margin-top: 70px;
+}
+
+#proyect h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375em;
+  font-weight: bold;
+}
+
+#proyect h2 em {
+  color:#f1ad1d;
+}
+
+#proyect p {
+  font-size: 0.875em;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #f1ad1d;
+  color: #fff;
+  border-radius: 0;
+  border-color: #f1ad1d;
+  font-size: 0.875em;
+  font-weight: bold;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+  color: #f1ad1d;
+}
+
+.containerImgs img {
+  margin-bottom: 40px;
+}
+
+/*estilos parallAX2*/
+.parallax2 {
+  height: 400px;
+  text-align:center;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  overflow:hidden;
+}
+
+#titlesA {
+    height:350px;
+    padding-top:150px;
+}
+
+#titlesB {
+    height:350px;
+    padding-top:100px;
+}
+
+#titlesA h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375em;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+#titlesA h2 em {
+  color: #f1ad1d;
+}
+
+/*Estilos team*/
+#mates1 {
+  margin-top: 40px;
+}
+
+/*Estilos cards*/
+
+#services {
+  margin-top: 45px;
+  margin-bottom:80px;
+}
+
+#services h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+  color: #fff;
+  background-color: #333300;
+  padding: 20px 0;
+}
+
+#services h3 em {
+  color: #f1ad1d;
+}
+
+#services .fa {
+  font-size: 2.625em;
+  color: #333333;
+}
+
+#services p {
+  font-size: 0.875em;
+}
+
+/*Estilos portNav*/
+
+#portNav .nav-item {
+  border: 1px solid #333333;
+  margin: 40px 2% 0px 2%;
+}
+
+#portNav .nav-link {
+  color: #333333;
+}
+
+#portNav .nav-link:hover {
+  background-color: #333333;
+  color: #f1ad1d;
+}
+
+/*Estilos gallery*/
+
+#gallery {
+  margin: 40px 0 80px 0;
+
+}
+
+#gallery img {
+  margin: 10px 0;
+}
+
+/*Estilos testimonials*/
+
+#test {
+  margin-bottom: 20px;
+}
+
+#testimonials {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+#test .fa {
+  color: #f1ad1d;
+  font-size: 3.75em;
+  margin-bottom: 10px;
+}
+
+.media img {
+  margin-right: 2%;
+}
+
+
+
+/*Estilos blog*/
+
+#blog {
+  margin-bottom: 30px;
+}
+
+#blog img {
+  width: 90%;
+}
+
+#media {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+#media #blog {
+  border-bottom: 2px solid black;
+}
+
+#media #blog .fa {
+  color: #f1ad1d;
+  font-size: 1.875em;
+  padding: 5%;
+}
+
+#media #blog h6 {
+  font-size: 1.5em;
+  color: #333333;
+}
+
+#media #blog h5 {
+  font-size: 0.875em;
+  color: #828282;
+}
+
+#media #blog a {
+  font-size: 0.875em;
+  color: #828282;
+  display: inline;
+}
+
+#btnLoad {
+  margin-bottom: 50px;
+}
+
+#btnBuy {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/*Estilos Subscribe*/
+
+#primerForm input {
+  height: 70px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  border: 1px solid black;
+}
+
+#btnSubscribe {
+  width: 28%;
+  height: 70px;
+  margin-top: 37px;
+}
+
+/*Estilos contacto*/
+.section_content {
+  margin-left: 5%;
+  margin-bottom: 70px;
+}
+
+#right {
+  margin-left: 10%;
+}
+
+.follow_us_btn {
+  background-color: #f1ad1d;
+}
+
+
+.content_big_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375em;
+  font-weight: bold;
+  color: #333333;
+}
+
+.text_color {
+  color: #f1ad1d;
+}
+.contact_form{
+	margin-top: 20px;
+}
+
+.conact_form_name, .conact_form_email{
+	width: 100%;
+	padding: 10px;
+	border: solid 1px #929292;
+	color: #525252;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.conact_form_name::-webkit-input-placeholder {
+	color: #525252;
+}
+
+.conact_form_name:-moz-placeholder { /* Firefox 18- */
+	color: #525252;
+}
+
+.conact_form_name::-moz-placeholder {  /* Firefox 19+ */
+	color: #525252;
+}
+
+.conact_form_name:-ms-input-placeholder {
+	color: #525252;
+}
+
+.conact_form_email::-webkit-input-placeholder {
+	color: #525252;
+}
+
+.conact_form_email:-moz-placeholder { /* Firefox 18- */
+	color: #525252;
+}
+
+.conact_form_email::-moz-placeholder {  /* Firefox 19+ */
+	color: #525252;
+}
+
+.conact_form_email:-ms-input-placeholder {
+	color: #525252;
+}
+
+.contact_form_message_block{
+	margin-top: 20px;
+}
+
+.contact_form_message{
+	width: 100%;
+	padding: 10px;
+	border: solid 1px #929292;
+	color: #525252;
+	font-size: 14px;
+	font-style: italic;
+	height: 180px;
+}
+
+.contact_form_message::-webkit-input-placeholder {
+	color: #525252;
+}
+
+.contact_form_message:-moz-placeholder { /* Firefox 18- */
+	color: #525252;
+}
+
+.contact_form_message::-moz-placeholder {  /* Firefox 19+ */
+	color: #525252;
+}
+
+.contact_form_message:-ms-input-placeholder {
+	color: #525252;
+	height: 180px;
+}
+
+.contact_form_bnt{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	padding: 12px 40px;
+	margin-right: 15px;
+	text-transform: uppercase;
+}
+
+.contact_form_btn_block{
+	margin-top: 20px;
+}
+
+.contact_message{
+	font-size: 30px;
+}
+
+/*Right*/
+.contact_right_details{
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+.contact_right_details span{
+	margin-left: 5px;
+}
+
+.contact_right_details .fa{
+	background-color: #333333;
+	padding: 8px 0px 0px 0px;
+	width: 34px;
+	height: 30px;
+	margin: 4px 0px;
+	text-align: center;
+}
+
+.follow_us_btn{
+	font-size: 18px;
+	width: 46px;
+	height: 40px;
+	margin-right: 15px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 7px;
+	color: white;
+	background-image: none;
+}
+
+/* Footer */
+.footer{
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+	padding: 35px 0px;
+	border-top: solid 1px #333333;
+}
+
+/* Footer 4 */
+.footer4{
+	padding: 80px 0;
+	background-color: #333333;
+	color: white;
+	font-size: 14px;
+}
+
+.footer4 p{
+	color: white;
+	width: 615px;
+	margin: 45px auto;
+	font-size: 12px
+}
+
+.footer4_social_btn{
+	color: white;
+	border: solid 1px white;
+	padding: 10px 25px;
+	margin: 5px 8px;
+	display: inline-block;
+}

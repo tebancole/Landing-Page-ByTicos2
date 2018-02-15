@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mantenimiento</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <h1>Bienvenido</h1>
+    <output id="txtAstronautaLogueado"></output>
+
+    <h1>Registros y Listas</h1>
+
+    <select class="seleccionar" id="sltMantenimiento">
+      <option value="none">--Seleccione su mantenimiento--</option>
+      <option value="mantCC">Cuerpo Celeste</option>
+      <option value="mantPE">Programas Espaciales</option>
+      <option value="mantME">Misión Espacial</option>
+    </select>
+
+
+
+    <div class="tablaMantenimiento" id="1">
+
+      <h2>Cuerpos Celestes</h2>
+
+      <form class="forms" id="frmCC">
+
+        <div class="divErrorV" id="divCC">Favor revise los campos resaltados</div>
+
+        <label for="txtCodigoCC">Código</label>
+        <input type="text" id="txtCodigoCC" required>
+
+        <select class="formSelects" id="seleccioneTipo" required>
+          <option value="none">--Seleccione el tipo de Cuerpo Celeste</option>
+          <option value="Planeta">Planeta</option>
+          <option value="Estrella">Estrella</option>
+          <option value="Satelite">Satélite</option>
+        </select>
+
+        <label for="txtNombre">Nombre</label>
+        <input type="text" id="txtNombre" required>
+
+        <label for="txtMasa">Masa</label>
+        <input type="text" id="txtMasa" required>
+
+        <label for="txtTemperatura">Temperatura</label>
+        <input type="text" id="txtTemperatura" required>
+
+        <label for="txtDia">Duración de un día (opcional)</label>
+        <input type="text" id="txtDia">
+
+        <label for="txtEdad">Edad</label>
+        <input type="text" id="txtEdad" required>
+
+        <label for="txtComposicion">Composición</label>
+        <input type="text" id="txtComposicion" required>
+
+        <label for="txtDistancia">Distancia del sol</label>
+        <input type="text" id="txtDistancia" required>
+
+        <label for="txtAnno">Duración de un año</label>
+        <input type="text" id="txtAnno" required>
+
+        <label for="txtSatelites">Cantidad de Satélites</label>
+        <input type="text" id="txtSatelites" placeholder="Solo para Planetas">
+
+        <label for="txtIntensidad">Intensidad Lumínica</label>
+        <input type="text" id="txtIntensidad" placeholder="Solo para Estrellas">
+
+        <label for="txtTamanno">Tamaño</label>
+        <input type="text" id="txtTamanno" placeholder="Solo para Estrellas">
+
+        <input type="button" id="btnRegistrarCC" value="Registrar">
+
+      </form>
+
+        <div class="tablaConsultas">
+
+          <h2>Cuerpos Celestes según tipo</h2>
+
+          <select class="seleccionar" id="seleccioneCC">
+            <option value="none">--Seleccione el tipo de Cuerpo Celeste</option>
+            <option value="planeta">Planeta</option>
+            <option value="estrella">Estrella</option>
+            <option value="satelite">Satélite</option>
+          </select>
+
+          <table id="tblCC">
+            <thead>
+              <tr>
+                <th>Codigo</th>
+                <th>Tipo</th>
+                <th>Nombre</th>
+                <th>Masa</th>
+                <th>Temperatura Media</th>
+                <th>Duración de un día</th>
+                <th>Edad</th>
+                <th>Composición</th>
+                <th>Distancia Media del Sol</th>
+                <th>Duración de un año</th>
+                <th id="thCantSatelitesOpcional">Cantidad de Satélites</th>
+                <th>Intensidad Lumínica</th>
+                <th>Tamaño</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+    </div>
+
+    <div class="tablaMantenimiento" id="2">
+
+      <h2>Programas Espaciales</h2>
+
+      <form class="forms" id="formPE">
+
+        <div class="divErrorV" id="divPE">Favor revise los campos resaltados</div>
+
+        <label for="txtCodigoPE">Código</label>
+        <input type="text" id="txtCodigoPE" required>
+
+        <label for="txtNombrePE">Nombre</label>
+        <input type="text" id="txtNombrePE" required>
+
+        <label for="txtFechaInicio">Fecha de Inicio</label>
+        <input type="date" id="txtFechaInicio" required>
+
+        <label for="txtFechaFin">Fecha de Finalización</label>
+        <input type="date" id="txtFechaFin" required>
+
+        <label for="txtAlcance">Alcance</label>
+        <input type="text" id="txtAlcance" required>
+
+        <h2>Asigne misiones al Programa</h2>
+
+        <div id="divMisiones">
+
+        </div>
+
+        <input type="button" id="btnRegistrarPE" value="Registrar">
+
+      </form>
+
+      <div class="tablaConsultas">
+
+        <h2>Programas Espaciales</h2>
+
+        <table id="tblPE">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre del Programa</th>
+              <th>Fecha de Inicio</th>
+              <th>Fecha de Finalización</th>
+              <th>Alcance</th>
+              <th>Codigos de Misiones</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+    <div class="tablaMantenimiento" id="3">
+
+      <h2>Misión Espacial</h2>
+
+      <form class="forms" id="frmME">
+
+        <div class="divErrorV" id=divME>Favor revise los campos resaltados</div>
+
+        <label for="txtCodigoME">Código</label>
+        <input type="text" id="txtCodigoME" required>
+
+        <label for="txtNombreME">Nombre</label>
+        <input type="text" id="txtNombreME" required>
+
+        <select class="formSelects" id="seleccionePrograma" required>
+
+
+        </select>
+
+        <label for="txtFechaDespegue">Fecha de Despegue</label>
+        <input type="date" id="txtFechaDespegue" required>
+
+        <label for="txtDuracion">Duración</label>
+        <input type="text" id="txtDuracion" required>
+
+        <label for="txtDatos">Datos de Interés</label>
+        <input type="text" id="txtDatos" required>
+
+        <select class="formSelects" id="seleccioneEstado" required>
+          <option value="none">--Seleccione el Estado de la Misión</option>
+          <option value="exitoso">Exitoso</option>
+          <option value="fracasado">Fracasado</option>
+          <option value="pendiente">Pendiente</option>
+        </select>
+
+        <label for="txtImagen">Imagen</label>
+        <input type="text" id="txtImagen">
+
+        <label for="txtNave">Nave</label>
+        <input type="text" id="txtNave" required>
+
+        <select id="sltCuerpoC" required>
+
+        </select>
+
+        <h2>Asigne astronautas a la mision</h2>
+
+        <div id="divAstronautas">
+
+        </div>
+
+        <input type="button" id="btnRegistrarME" value="Registrar">
+
+      </form>
+
+      <div class="tablaConsultas">
+
+        <h2>Misiones Espaciales</h2>
+
+        <table id="tblME">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre de la misión</th>
+              <th>Programa</th>
+              <th>Fecha de Lanzamiento</th>
+              <th>Duración</th>
+              <th>Datos de Interés</th>
+              <th>Estado</th>
+              <th>Insignia</th>
+              <th>Nave</th>
+              <th>Cuerpo Celeste</th>
+              <th>Astronautas Asignados</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+
+      </div>
+
+    </div>
+
+    <script src="js/logicaAstronautas.js"></script>
+    <script src="js/logicaCC.js"></script>
+    <script src="js/logicaMisiones.js"></script>
+    <script src="js/logicaProgramas.js"></script>
+    <script src="js/interfazMantenimiento.js"></script>
+  </body>
+</html>

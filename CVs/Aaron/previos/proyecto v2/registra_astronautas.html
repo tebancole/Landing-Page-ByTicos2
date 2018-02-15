@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sistema de Registro de Astronautas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section id="registro">
+          <main id="box">
+            <br>
+            <h2>Registro</h2>
+              <form class="forms" id="frmReg">
+
+                <div class="divErrorV" id="divReg">Favor revise los campos resaltados</div>
+
+                <label for="txtCodigoAs">Codigo</label>
+                <input type="text" id="txtCodigoAs" required>
+
+                <label for="txtIdentificacionAs">Identificacion</label>
+                <input type="text" id="txtIdentificacionAs" required="">
+
+                <label for="txtNombreAs">Nombre</label>
+                <input type="text" id="txtNombreAs" required>
+
+                <label for="txtNombreAs">Segundo Nombre</label>
+                <input type="text" id="txtNombre2As" placeholder="Opcional"/>
+
+                <label for="txtApellidoAs">Apellido</label>
+                <input type="text" id="txtApellidoAs" required>
+
+                <label for="txtApellido2As">Segundo Apellido</label>
+                <input type="text" id="txtApellido2As" placeholder="Opcional"/>
+
+                <label for="txtEdadAs">Edad</label>
+                <input type="text" id="txtEdadAs" required>
+
+                <label for="txtGeneroAs">Genero</label>
+                <input type="text" id="txtGeneroAs" placeholder="Masculino o Femenino" required>
+
+                <label for="txtNacionalidadAs">Nacionalidad</label>
+                <input type="text" id="txtNacionalidadAs" required>
+
+                <label for="txtContrasennaAs">Contraseña</label>
+                <input type="password" id="txtContrasennaAs" required>
+
+                <label for="txtConfirmacionAs">Confirmacion de contraseña</label>
+                <input type="password" id="txtConfirmacionAs" required>
+
+                <label for="txtTipoAs">Tipo</label>
+                <input type="text" id="txtTipoAs" value="astronauta">
+
+                <label for="txtCorreoAs">Correo</label>
+                <input type="text" id="txtCorreoAs" required>
+
+                <input type="button" value="Registrar" id="btnIngresarUsuario">
+
+                <output id="txtResult"></output>
+
+              <a href="index.html">Login</a></h4>
+
+              </form>
+            </main>
+      </section>
+
+
+    <script src="js/logicaAstronautas.js"></script>
+    <script src="js/interfazRegistrese.js"></script>
+  </body>
+</html>
